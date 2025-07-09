@@ -88,7 +88,7 @@ def run():
         print(f"--- Completed generation {generation}")
         generation += 1
 
-    winner = pop.run(eval_all, 1000)
+    winner = pop.run(eval_all, 10000)
 
     with open("winner.pkl","wb") as f:
         pickle.dump(winner,f)
